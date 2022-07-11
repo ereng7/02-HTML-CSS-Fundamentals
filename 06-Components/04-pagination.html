@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagination</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .pages {
+      margin: 100px auto;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn {
+      width: 48px;
+      height: 48px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 1px solid #087f5b;
+      cursor: pointer;
+      color: #087f5b;
+    }
+
+    .btn:hover {
+      background-color: #087f5b;
+      color: #fff;
+    }
+
+    .btn-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .number {
+      width: 48px;
+      height: 48px;
+      background-color: #fff;
+      border-radius: 50%;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .number:hover {
+      background-color: #087f5b;
+      color: #fff;
+    }
+
+    .filled {
+      background-color: #087f5b;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pages">
+    <button class="btn">
+      <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+
+    <button class="number">1</button>
+    <button class="number">2</button>
+    <button class="number filled">3</button>
+    <button class="number">4</button>
+    <button class="number">5</button>
+    <button class="number">6</button>
+    <span class="dots">...</span>
+    <button class="number">23</button>
+
+    <button class="btn">
+      <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+
+</body>
+
+</html>
